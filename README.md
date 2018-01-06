@@ -159,7 +159,7 @@ For more details see [Example](https://github.com/nikitoSha/Android-Easy-AlertDi
 
 # MIT License
 
-## Copyright (c) 2018 Nikita (nikitoSha (https://github.com/nikitoSha))
+## Copyright (c) 2018 Nikita (nikitoSha https://github.com/nikitoSha)
 
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
