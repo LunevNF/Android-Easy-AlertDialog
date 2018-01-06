@@ -30,7 +30,7 @@ That's all.
 ## How to use
 ### Create simple standart AlertDialog with Activity's context (deprecated).
 You need to set buttons and show dialog after function's return.
-```android
+```java
 EADialogManager eaDialogManager = new EADialogManager(YourActivityContext|YourAppContext);
 AlertDialog alertDialog = eaDialogManager.createStandartDialog(
                         YourActivityContext, false,
@@ -61,7 +61,7 @@ AlertDialog alertDialog = eaDialogManager.createStandartDialog(
                 alertDialog.show();
 ```
 ### Show easy AlertDialog with Activity's context and positive button's callback.
-```android
+```java
 EADialogManager eaDialogManager = new EADialogManager(YourActivityContext|YourAppContext);
 eaDialogManager.showEADialogWithOneButton(
         YourActivityContext, true, false,
@@ -78,7 +78,7 @@ eaDialogManager.showEADialogWithOneButton(
 );
 ```
 ### Show easy AlertDialog with Activity's context, positive and negative button's callback
-```android
+```java
 EADialogManager eaDialogManager = new EADialogManager(YourActivityContext|YourAppContext);
 eaDialogManager.showEADialogWithTwoButtons(
         YourActivityContext, false, true,
@@ -105,7 +105,7 @@ eaDialogManager.showEADialogWithTwoButtons(
 ```
 
 ### Show easy AlertDialog with Activity's context and positive, negative and neutral button's callback
-```android
+```java
 EADialogManager eaDialogManager = new EADialogManager(YourActivityContext|YourAppContext);
 eaDialogManager.showEADialogWithThreeButtons(
         YourActivityContext, false, false,
@@ -149,7 +149,7 @@ You can show this dialog from background (service), for example. Just create Act
     android:theme="@android:style/Theme.Dialog"/>
 ```
 3. Init EasyAlertDialog and show your custom ActivityDialog:
-```android
+```java
 EADialogManager eaDialogManager = new EADialogManager(YourAppContext);
 eaDialogManager.showEAActivityDialog(
     "ru.rsit.easyalertdialogsample.DialogActivity");
