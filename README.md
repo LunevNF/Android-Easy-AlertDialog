@@ -146,8 +146,12 @@ You can show this dialog from background (service), for example. Just create Act
 3. Init EasyAlertDialog and show your custom ActivityDialog:
 ```java
 EADialogManager eaDialogManager = new EADialogManager(YourAppContext);
-eaDialogManager.showEAActivityDialog(
-    "ru.rsit.easyalertdialogsample.DialogActivity");
+try {
+    eaDialogManager.showEAActivityDialog(
+            "ru.rsit.easyalertdialogsample.DialogActivity");
+} catch (PackageManager.NameNotFoundException e) {
+    e.printStackTrace();
+}    
 ```
 For more details see [Example](https://github.com/nikitoSha/Android-Easy-AlertDialog/tree/master/sample).
 
